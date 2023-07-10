@@ -11,7 +11,7 @@ Cross-platform crypto primitives for building apps for TON blockchain. For inter
 - 🏎 Built on top of Buffer (polyfill required in browsers)
 - 🍰 No reimplemented crypto
 
-## Install
+## Installation
 
 ```bash
 yarn add @ton/crypto-primitives buffer
