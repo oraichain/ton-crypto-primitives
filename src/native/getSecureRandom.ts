@@ -6,10 +6,10 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-const getRandomBytes = require('expo-crypto').getRandomBytes;
-
-export function getSecureRandomBytes(size: number): Buffer {
-    return Buffer.from(getRandomBytes(size));
+export function getSecureRandomBytes(size: number): Buffer {    
+    const randomBytes = new Uint8Array(size);  
+    window.crypto.getRandomValues(randomBytes);
+    return randomBytes;
 }
 
 export function getSecureRandomWords(size: number): Uint16Array {
